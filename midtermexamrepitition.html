@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Site ziyaretçileri tarafından görülmesi gerekmeyen kodların yazıldığı bölümdür.-->
+    <title>Sekme Başlığı</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content=""><!--Anahtar kelime tanımlanması-->
+    <meta name="author" content=""><!--Sayfa yazarının tanımlanması-->
+    <meta name="description" content=""><!--Sayfa açıklamasının tanımlanması-->
+    <!--<meta http-equiv="refresh" content="5">Sayfanın 10 saniyede bir yenilenmesini sağlar.-->
+</head>
+<body bgcolor="#ffcc99"><!--Web sayfamızda görmek istediğimiz bütün içerikleri bu etiketin arasına yazıyoruz.-->
+<!--bgcolor sayfa rengini belirler.-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus ad cumque? 
+    Unde iste quas omnis officiis fuga itaque, aliquid ipsum hic in quasi 
+    explicabo, reiciendis neque ipsam assumenda quibusdam?</p><!--Paragraf etiketi-->
+    <br><!--Satır atlama etiketi-->
+    <hr color="#ffa64d"><!--Yatay çizgi eklemek için kullanılır.-->
+    <h1>Heading 1</h1><!--Başlık etiketleri büyükten küçüğe doğru-->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <ul type="square">
+        <li>ul(unordered list/sırasız liste)</li>
+        <li>square(içi dolu kare simgesi)</li>
+        <li>disc(içi dolu daire)varsayılan(default) madde işareti</li>
+        <li>circle(içi boş daire simgesi)</li>
+    </ul>
+
+     <ol start="2">
+        <li>ol(ordered list/sıralı liste)</li>
+        <li>start(hangi sırada başlamalı </li>
+     </ol>    
+     <b>Kalın metin</b>
+     <br>    
+     <strong>Önemli metin</strong><!--<b> etiketiyle aynı gibi-->
+     <br>
+     <i>İtalik metin</i>
+     <br>
+     <u>Underline(altı çizili)metin</u>
+     <br>
+     <font face="segoe script" color="#336600" size="9">now or never</font>
+     <br>
+     <strike>Metnin üzerine çizgi çizer.</strike>
+     <br>
+     <s>Metnin üzerine çizgi çizer.</s>
+     <br>
+     <a href="kek.jpg" target="_blank">Kek</a><!--url'i yeni sekmede açar.-->
+     <br>
+     <a href="kek.jpg" target="_self">Kek</a><!--url'i geçerli sekmede açar.(varsayılan/default)-->
+     <br>
+     <a href="mailto:mercansila03@gmail.com">Mail</a>
+     <br><br>
+  
+<table border="1">
+<tr>
+    <td colspan="3">STOKLAR</td>
+   
+</tr>
+<tr>
+    <td>1</td>
+    <td>kalem</td>
+    <td rowspan="3">50</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>silgi</td>
+</tr>
+<tr>
+    <td>3</td>
+</tr>
+</table>
+<br>
+<table border="1">
+    <caption>Ders Programı</caption>
+    <tr>
+        <th>Pazartesi</th>
+        <th>Salı</th>
+        <th>Çarşamba</th>
+        <th>Perşembe</th>
+        
+    </tr>
+    <tr>
+        <td>Veri Tabanı</td>
+        <td></td>
+        <td >Veri Yapıları</td>
+        <td>İngilizce</td>
+       
+    </tr>
+    <tr>
+        <td rowspan="2">Web Tasarımı</td>
+        <td rowspan="2">İnkılap</td>
+        <td rowspan="2">Nesneye Yönelik Programlama</td>
+        <td>Türk Dili</td>
+        
+    </tr>
+    <tr>
+        <td>Sunucu İşletim Sistemi</td>
+    </tr>
+    
+</table>
+<br>
+<table border="1">
+<tr>
+    <td colspan="3">Ders Adı</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>WEB Tasarımı</td>
+    <td rowspan="3">5</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Nesneye Yönelik Programlama</td>
+   
+</tr>
+<tr>
+    <td>3</td>
+    <td>İnternet Programcılığı</td>
+</tr>
+<br><br><br>
+<form action="mailto:mercansila03@gmail.com" method="post">
+    <select name="arabalar" id="">
+        <option value="secim" selescted="selected">Seçiniz--</option><!--Selected seçili olan-->
+        <option value="mercedes">Mercedes</option>
+        <option value="bmw">BMW</option>
+        <option value="alfaromeo">Alfa Romeo</option>
+    </select>
+    <br>
+    <label for="ad">Adınız:</label><br>
+    <input type="text" name="ad" ><!--tarih bilgisi girmek için kullanılır.-->
+    <br>
+    <input type="reset" value="Sil">
+    <input type="submit" value="Gönder">
+</form>
+<br>
+<form action="" method="get">
+    <fieldset><!--form içerisindeki ilişkili elemanları gruplandırır.-->
+   <legend>Yemekler</legend><!--fieldset etiketinin başlığı-->
+    <input type="checkbox" name="yemek" value="doner">Döner <br>
+    <input type="checkbox"  name="yemek"value="iskender">İskender <br>
+    <input type="checkbox" name="yemek" value="hamburger">Hamburger <br>
+    <input type="reset" value="Sil">
+    </fieldset>
+</form>
+
+<marquee scrollamount="5" direction="right" >Soldan Sağa</marquee><!--soldan sağa kayan yazı-->
+<marquee scrollamount="1" direction="down">Aşağıdan Yukarıya</marquee><!--scrollamount yazının geçiş hızını ayarlar.-->
+<marquee direction="">UFUK MYO</marquee><!--varsayılan sağdan sola-->
+</body>
+</html>
